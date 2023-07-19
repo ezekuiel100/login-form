@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.container {
+  background-color: #fff;
+  width: 380px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.172);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 35px;
+  line-height: 3;
+  border-radius: 15px 15px 0 0;
+  background-color: #4158d0;
+  font-weight: 600;
+  color: #fff;
+}
+
+form {
+  padding: 10px 30px;
+}
+
+form .box {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+form input {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid lightgray;
+  outline: none;
+  padding-left: 20px;
+}
+
+.box label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.3s;
+  color: #999;
+}
+
+.box input:focus ~ label,
+.box input:valid ~ label {
+  top: 0;
+  background-color: #fff;
+}
+
+form .esqueceusenha {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.botaoLogin {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background-color: #4158d0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.novaconta {
+  text-align: center;
+}
